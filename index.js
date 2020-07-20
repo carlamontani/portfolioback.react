@@ -9,6 +9,10 @@ const port = process.env.PORT || 8080;
 const about = require ("./JSON/About.json");
 const portfolio = require ("./JSON/Portfolio.json");
 
+app.get('/', (req, res) => {
+    res.json("aca funcionando")
+})
+
 app.get('/about', (req, res) => {
     res.json(about)
 })
