@@ -1,15 +1,41 @@
 [
     {
-        "name": "Proyecto 1",
+        "name": "CoderConf Landing",
+        "client": "Coderhouse",
         "descripcion": "Utilice HTML y CSS para trabajar con los estilos y hacer un CV bonito y pechochor",
-        "image": "https://i.ibb.co/ThFjyny/667e3492-0b16-4931-9946-fd6e39fdff6f.jpg",
-        "link" : "http://cv.giulianaolmos.guixon.com/"
+        "skills": [
+            "Html",
+            "Css",
+            "Sass",
+            "Javascript"
+            ],
+        "image" : "https://i.ibb.co/ThFjyny/667e3492-0b16-4931-9946-fd6e39fdff6f.jpg",
+        "link" : "https://carlamontani.github.io/coderconf-landing/"
     },
     {
-        "name": "Proyecto 2",
+        "name": "Banquito de Imágenes",
+        "client": "Curso JS",
         "descripcion": "Utilice HTML y CSS para trabajar con los estilos y hacer un CV bonito y pechochor",
+        "skills": [
+            "Html",
+            "Css",
+            "Javascript",
+            "JQuery"
+            ],
         "image": "https://i.ibb.co/ThFjyny/667e3492-0b16-4931-9946-fd6e39fdff6f.jpg",
-        "link": "http://cv.giulianaolmos.guixon.com/"
+        "link": "https://carlamontani.github.io/CH-bancodeimagenes-js/"
+    },
+    {
+        "name": "Login",
+        "descripcion": "Utilice HTML y CSS para trabajar con los estilos y hacer un CV bonito y pechochor",
+        "skills": [
+            "Html",
+            "Css",
+            "Bulma",
+            "React"
+            ],
+        "image": "https://i.ibb.co/ThFjyny/667e3492-0b16-4931-9946-fd6e39fdff6f.jpg",
+        "link": "#"
     }
 
 ]

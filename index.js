@@ -10,7 +10,7 @@ const about = require ("./JSON/About.json");
 const portfolio = require ("./JSON/Portfolio.json");
 
 app.get('/', (req, res) => {
-    res.json("aca funcionando")
+    res.json("funcionando")
 })
 
 app.get('/about', (req, res) => {
