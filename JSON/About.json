@@ -4,7 +4,7 @@
         "profession" : "Front-End Developer",
         "photo" : "https://i.imgur.com/2uWQcPO.jpg",
         "about_me" : "Soy desarrolladora y diseñadora, me apasionan las nuevas tecnologías y doy especial atencion a la experiencia del usuario. Busco aplicar mis conocimientos, seguir aprendiendo y avanzar profesionalmente",
-        "skills-front": [
+        "skills_front": [
             "Html",
             "Css",
             "Sass",
@@ -13,7 +13,7 @@
             "NodeJS",
             "SQL"
         ],
-        "skills-back": [
+        "skills_back": [
             "Java",
             "Node.js",
             "SQL"
