@@ -1,0 +1,21 @@
+[
+    {
+        "education": [
+        "Diseño Gráfico",
+        "Desarrollo Front-End",
+        "Diseño UX",
+        "Javascript",
+        "React"
+        ],
+        "institution": [
+            "FADU·UBA",
+            "Ada ITW",
+            "CoderHouse"
+        ],
+        "description": [
+            "FADU·UBA",
+            "Ada ITW",
+            "CoderHouse",
+        ]
+    }
+]
