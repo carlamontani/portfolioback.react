@@ -2,13 +2,20 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const corsOptions = {
-  origin: "https://portfoliofront-react-node.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+const allowedOrigins = [
+  "https://portfoliofront-react-node.vercel.app",          // main production domain
+  "https://portfoliofront-react-node-uwoe-qh1cng1p6.vercel.app" // preview deployment
+];
 
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
+}));
 
 const about = require("../JSON/About.json");
 const portfolio = require("../JSON/Portfolio.json");
