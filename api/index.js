@@ -9,15 +9,12 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions));
 
-const port = process.env.PORT || 8080;
-
-const about = require("./JSON/About.json");
-const portfolio = require("./JSON/Portfolio.json");
+const about = require("../JSON/About.json");
+const portfolio = require("../JSON/Portfolio.json");
 
 app.get("/", (req, res) => {
-  res.json("funcionando");
+  res.json("API funcionando en Vercel");
 });
 
 app.get("/about", (req, res) => {
@@ -28,6 +25,4 @@ app.get("/portfolio", (req, res) => {
   res.json(portfolio);
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port: ${port}`);
-});
+module.exports = app;
