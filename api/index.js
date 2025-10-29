@@ -2,26 +2,17 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const allowedOrigins = [
-  "https://portfoliofront-react-node.vercel.app",          // main production domain
-  "https://portfoliofront-react-node-uwoe-qh1cng1p6.vercel.app" // preview deployment
-];
-
+// Apply CORS middleware to allow all origins
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  }
+  origin: '*',  // Allow all origins
 }));
 
+// Import JSON data for about and portfolio
 const about = require("../JSON/About.json");
 const portfolio = require("../JSON/Portfolio.json");
 
 app.get("/", (req, res) => {
-  res.json("API funcionando en Vercel");
+  res.json({ message: "API funcionando en Vercel" });
 });
 
 app.get("/about", (req, res) => {
